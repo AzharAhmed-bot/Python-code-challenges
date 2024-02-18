@@ -60,6 +60,22 @@ Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/
 python3 clockInTheMirror.py
 ```
 
+# 3. The latest clock
+Write a function which receives 4 digits and returns the latest time of day that can be built with those digits.
+
+The time should be in HH:MM format.
+
+Examples:
+
+digits: 1, 9, 8, 3 => result: "19:38"
+digits: 9, 1, 2, 5 => result: "21:59" ("19:25" is also a valid time, but 21:59 is later)
+
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/latestClock.py) for code.
+
+```
+python3 latestClock.py
+```
+
 
 
 ## License
