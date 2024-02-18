@@ -82,6 +82,11 @@ The rgb function is incomplete. Complete it so that passing in RGB decimal value
 
 Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.
 
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/rgbtohex.py) for code.
+
+```
+python3 rgbtohex.py
+```
 
 ## License
 This repository is licensed under the MIT License.
