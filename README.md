@@ -87,6 +87,28 @@ Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/
 ```
 python3 rgbtohex.py
 ```
+# 5. Fibonnacci Product
+You are given a positive integer n greater than one.
+
+How many ways are there to represent it as a product of some Fibonacci numbers greater than one?
+
+(Fibonacci sequence: 1, 1, 2, 3, 5, 8...).
+
+For example, there are two ways for n = 40:
+
+2 * 2 * 2 * 5
+5 * 8
+But you can't represent n = 7 in an aforementioned way.
+
+Note that n may be really big (up to 10^36). Good luck!
+
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/FibonacciProduct.py) for code.
+
+```
+python3 FibonacciProduct.py
+```
+
+
 
 ## License
 This repository is licensed under the MIT License.
