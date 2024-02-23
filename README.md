@@ -107,6 +107,25 @@ Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/
 ```
 python3 FibonacciProduct.py
 ```
+# 6. Three Details Simple fun
+Dudka has n details. He must keep exactly 3 of them.
+
+To do this, he performs the following operations until he has only 3 details left:
+
+He numbers them.
+He keeps those with either odd or even numbers and throws the others away.
+Dudka wants to know how many ways there are to get exactly 3 details. Your task is to help him calculate it.
+
+Example
+For n = 6, the output should be 2.
+
+Dudka has 6 details, numbered 1 2 3 4 5 6. 
+He can keep either details with numbers 1, 3, 5, 
+or with numbers 2, 4, 6. 
+Both options leave him with 3 details, 
+so the answer is 2.
+
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/ThreeDetails.py) for code.
 
 
 
