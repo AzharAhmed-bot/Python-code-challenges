@@ -128,6 +128,22 @@ so the answer is 2.
 Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/ThreeDetails.py) for code.
 
 
+# 7. Correct Article
+Write a program that determines the correct article("a" or "an") to precede a given word.
+
+Example 
+apple --> an apple
+banana --> a banana
+cat --> a cat
+elephant --> an elephant
+
+Actual test
+unicorn --> a unicorn
+hour --> an hour
+html-page --> an html-page 
+university --> a university
+
+
 
 ## License
 This repository is licensed under the MIT License.

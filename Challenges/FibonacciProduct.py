@@ -1,3 +1,5 @@
+# Time complexity is 0(N)
+
 def fibs(limit):
     a, b, res = 2, 3, []
     while a <= limit:
@@ -5,8 +7,10 @@ def fibs(limit):
         a, b = b, a + b
     return res
 
+
+# Look up table
 FIB = fibs(10 ** 36)
-print(FIB)
+
 
 from functools import cache
 
