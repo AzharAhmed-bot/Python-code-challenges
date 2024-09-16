@@ -143,6 +143,37 @@ hour --> an hour
 html-page --> an html-page 
 university --> a university
 
+# 8. Biggest of the Smallest of the Biggest of the...
+You are given an array arr of integers, and a string str that contains steps to extract an array out of arr.
+
+str contains a chained combination of "the biggest" and "the smallest" inside it. An example would be "the biggest of the smallest of the biggest of the biggest". At each step in str, extract either the biggest or the smallest values from arr, and continue to the next step with the extracted values.
+
+Example:
+Given the array [1,2,3,4,5,6,7,8,9] and the string "the biggest of the smallest", you should return [3,4]. The first step in str is "the smallest", and the smallest of the array is [1,2,3,4]. You then proceed to the next step in str with this extracted array, [1,2,3,4]. The next step in str is "the biggest", and the biggest of [1,2,3,4] is [3,4].
+
+Specifications:
+If you are given an empty array, return an empty array.{-}
+
+If you are given an empty string, return the original array.{-}
+
+If at any step the length of the array becomes one, return the array.{-}
+
+If at any step the length of the array is odd, then "the biggest" part takes the middle element. For example, when taking "the biggest" of [1,2,3], your extracted array should be [2,3] and when taking "the smallest" your array should be [1].{-}
+
+The integers inside the array that you return need to be in the same order that they were in the original array. "the biggest" and "the smallest" are not referring to the start and end of the array, but to the size of the integers inside the array. When taking "the biggest" of [5,3,9,1,2,4], your code should return [5,9,4], as they are the biggest integers in the array.
+
+There may be duplicate integers inside the array, in which case the duplicate integers that come first are prioritized. When taking "the biggest" of [4,5,4,4], your code should return [4,5], not [5,4].
+
+More Examples:
+Given the array [23,567,33,13,67,43,678,9,1,56] and the string "the smallest of the biggest", you should return [43,56] because "the biggest" is [567,67,43,678,56], and "the smallest" of that is [43,56].
+
+Given the array [4] and the string "the biggest of the smallest", you should return [4] because the array has only one element.
+
+The "biggest of the smallest of the smallest" of [7,8,9] is [7]: [7,8,9]->[7]->[7].
+
+
+# 9 Sum the nums,sum the sums and sum the muns up to the sum
+
 
 
 ## License
