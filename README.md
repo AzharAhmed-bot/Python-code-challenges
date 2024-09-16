@@ -173,7 +173,28 @@ The "biggest of the smallest of the smallest" of [7,8,9] is [7]: [7,8,9]->[7]->[
 
 
 # 9 Sum the nums,sum the sums and sum the muns up to the sum
+Let's define two functions:
 
+```bash
+S(N) — sum of all positive numbers not more than N
+S(N) = 1 + 2 + 3 + ... + N
+```
+
+```bash
+Z(N) — sum of all S(i), where 1 <= i <= N
+Z(N) = S(1) + S(2) + S(3) + ... + S(N)
+```
+You will be given an integer N as input; your task is to return the value of S(Z(N)).
+
+For example, let N = 3:
+```bash
+Z(3n) = 1n + 3n + 6n = 10n
+S(Z(3n)) = S(10n) = 55n
+The input range is 1 <= N <= 10^9 and there are 80 ( 40 in LC ) test cases, of which most are random.
+```
+
+This is my first kata and I hope you'll enjoy it :).
+Best of luck!
 
 
 ## License
