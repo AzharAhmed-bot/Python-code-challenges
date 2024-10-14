@@ -247,7 +247,7 @@ In the second part of the Kata, you will create another function that takes a ju
 
 Example:
 ```bash
-decrypt("bsepoe10a13"); //should return: "Nice to meet you, fellow Agent!"```
+decrypt("bsepoe10a13"); //should return: "Nice to meet you, fellow Agent!"
 decrypt("How are you still alive, 007??"); //should return "BANG!"
 ```
 ## License
