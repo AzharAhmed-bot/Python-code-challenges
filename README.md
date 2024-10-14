@@ -215,8 +215,8 @@ Input: "1 9 3 4 -5"  =>  Output: "9 -5"
 ## SECRET AGENT
 
 Hello, fellow Warrior!<br>
-Or, should I say, Secret Agent?
-This is your chance to prove that you are true spy material, and not just some amateur with a tuxedo!
+Or, should I say, Secret Agent?<br>
+This is your chance to prove that you are true spy material, and not just some amateur with a tuxedo!<br>
 The first step on your way to the double 0 is also the most important: Learn how to craft and decode a secret password to communicate safely with other agents.
 
 
