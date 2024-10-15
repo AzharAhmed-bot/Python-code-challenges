@@ -250,5 +250,11 @@ Example:
 decrypt("bsepoe10a13"); //should return: "Nice to meet you, fellow Agent!"
 decrypt("How are you still alive, 007??"); //should return "BANG!"
 ```
+
+## 12 Move Ten
+Move every letter in the provided string forward 10 letters through the alphabet.<br>
+If it goes past 'z', start again at 'a'.<br>
+
+Input will be a string with length > 0.<br>
 ## License
 This repository is licensed under the MIT License.
