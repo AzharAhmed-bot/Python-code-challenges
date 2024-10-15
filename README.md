@@ -131,17 +131,19 @@ Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/
 # 7. Correct Article
 Write a program that determines the correct article("a" or "an") to precede a given word.
 
-Example 
-apple --> an apple
-banana --> a banana
-cat --> a cat
-elephant --> an elephant
+Example <br>
+apple --> an apple<br>
+banana --> a banana<br>
+cat --> a cat<br>
+elephant --> an elephant<br>
 
-Actual test
-unicorn --> a unicorn
-hour --> an hour
-html-page --> an html-page 
-university --> a university
+Actual test<br>
+unicorn --> a unicorn<br>
+hour --> an hour<br>
+html-page --> an html-page <br>
+university --> a university<br>
+
+Vist this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/correctArticle.py) for the code.🙌
 
 # 8. Biggest of the Smallest of the Biggest of the...
 You are given an array arr of integers, and a string str that contains steps to extract an array out of arr.
@@ -164,12 +166,15 @@ The integers inside the array that you return need to be in the same order that 
 
 There may be duplicate integers inside the array, in which case the duplicate integers that come first are prioritized. When taking "the biggest" of [4,5,4,4], your code should return [4,5], not [5,4].
 
-More Examples:
+More Examples:<br>
 Given the array [23,567,33,13,67,43,678,9,1,56] and the string "the smallest of the biggest", you should return [43,56] because "the biggest" is [567,67,43,678,56], and "the smallest" of that is [43,56].
 
 Given the array [4] and the string "the biggest of the smallest", you should return [4] because the array has only one element.
 
-The "biggest of the smallest of the smallest" of [7,8,9] is [7]: [7,8,9]->[7]->[7].
+The "biggest of the smallest of the smallest" of [7,8,9] is [7]: [7,8,9]->[7]->[7].<br>
+
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/biggestOfSmallest.js) for the code
+
 
 
 # 9 Sum the nums,sum the sums and sum the muns up to the sum
@@ -193,8 +198,7 @@ S(Z(3n)) = S(10n) = 55n
 The input range is 1 <= N <= 10^9 and there are 80 ( 40 in LC ) test cases, of which most are random.
 ```
 
-This is my first kata and I hope you'll enjoy it :).
-Best of luck!
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/sumofsums.js) for the code.📈
 
 # 10 Max and Min values in array
 - Description:
@@ -251,10 +255,14 @@ decrypt("bsepoe10a13"); //should return: "Nice to meet you, fellow Agent!"
 decrypt("How are you still alive, 007??"); //should return "BANG!"
 ```
 
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/secretAgent.js) for the code🥐
+
 ## 12 Move Ten
 Move every letter in the provided string forward 10 letters through the alphabet.<br>
 If it goes past 'z', start again at 'a'.<br>
 
 Input will be a string with length > 0.<br>
+
+Visit this [file](https://github.com/AzharAhmed-bot/Python-code-challenges/blob/main/Challenges/java/src/App.java) for the code🥓
 ## License
 This repository is licensed under the MIT License.
