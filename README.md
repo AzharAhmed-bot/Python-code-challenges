@@ -280,7 +280,7 @@ Get rid of them. Only the ending ones.
 0      -> 0
 ```
 Note: Zero should be left as it is.
-## 13 Wordify an Integer
+## 14 Wordify an Integer
 Description:
 Turn a given number (an integer > 0, < 1000) into the equivalent English words. For the purposes of this kata, no hyphen is needed in numbers 21-99.
 Examples:
@@ -294,7 +294,7 @@ Examples:
 ```
 Based on "Speech module" mission from Checkio.
 
-##  Sum of sums
+## 15 Sum of sums
 Write a function that takes an array/list of numbers and returns a number such that
 
 Explanation total([1,2,3,4,5]) => 48
