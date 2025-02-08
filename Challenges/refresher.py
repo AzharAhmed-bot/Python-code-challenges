@@ -14,7 +14,6 @@ def atBash(string):
     for char in string:
         if char.isalpha():
             position=alphabets.index(char.lower())
-            print(position)
             result+=alphabets[len(alphabets)-position-1] if char.islower() else alphabets[len(alphabets)-position-1].upper()
         else:
             result+=char
