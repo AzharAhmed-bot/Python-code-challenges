@@ -319,5 +319,21 @@ total([-1,-1,-1]) => -4
 total([1,2,3,4])  => 20
 ```
 Note: each array/list will have at least an element and all elements will be valid numbers.
+## Real length of String
+Description:<br>
+In languages that use UTF-16 encoding for strings (JavaScript, JVM languages like Java, .NET languages like C#...), if the code point of a character is larger than 0xFFFF, it will be treated as two code units.
+
+For example:
+```bash
+The code point of the emoji 🙉 (U+1F649, Hear-No-Evil Monkey) is 0x1F649.
+
+'🙉'.length; // 2
+```
+Write a function that returns the real length of a string.
+```bash
+"abcd"   --> 4
+"🙉"     --> 1
+"😸🦌🚀" --> 3
+```
 ## License
 This repository is licensed under the MIT License.
