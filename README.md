@@ -319,7 +319,7 @@ total([-1,-1,-1]) => -4
 total([1,2,3,4])  => 20
 ```
 Note: each array/list will have at least an element and all elements will be valid numbers.
-## Real length of String
+## 16 Real length of String
 Description:<br>
 In languages that use UTF-16 encoding for strings (JavaScript, JVM languages like Java, .NET languages like C#...), if the code point of a character is larger than 0xFFFF, it will be treated as two code units.
 
@@ -334,6 +334,23 @@ Write a function that returns the real length of a string.
 "abcd"   --> 4
 "🙉"     --> 1
 "😸🦌🚀" --> 3
+```
+
+## 17 Mirror Mirror on the wall
+You get a list of integers, and you have to write a function mirror that returns the "mirror" (or symmetric) version of this list: i.e. the middle element is the greatest, then the next greatest on both sides, then the next greatest, and so on...<br>
+
+More info<br>
+The list will always consist of integers in range -1000..1000 and will vary in size between 0 and 10000. Your function should not mutate the input array, and this will be tested (where applicable). Notice that the returned list will always be of odd size, since there will always be a definitive middle element.
+
+```bash
+Examples
+[]  -->  []
+[1]  -->  [1]
+[2, 1]  -->  [1, 2, 1]
+[1, 3, 2]  -->  [1, 2, 3, 2, 1]
+[-8, 42, 18, 0, -16]  -->  [-16, -8, 0, 18, 42, 18, 0, -8, -16]
+[-3, 15, 8, -1, 7, -1] --> [-3, -1, -1, 7, 8, 15, 8, 7, -1, -1, -3]
+[-5, 10, 8, 10, 2, -3, 10] --> [-5, -3, 2, 8, 10, 10, 10, 10, 10, 8, 2, -3, -5]
 ```
 ## License
 This repository is licensed under the MIT License.
