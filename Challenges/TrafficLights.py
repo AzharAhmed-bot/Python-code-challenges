@@ -70,7 +70,7 @@ class TrafficLightAI:
     
     def simulate_traffic(self,cars,action):
         new_cars=cars.copy()
-        arrival_prob=0.3
+        arrival_prob=0.8
         if action== "NS-Green":
             new_cars[0]=max(0,new_cars[0]-self.max_car_depart)
             new_cars[1]=max(0,new_cars[1]-self.max_car_depart)
