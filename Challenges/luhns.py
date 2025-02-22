@@ -43,4 +43,4 @@ def optimizedLuhns(number):
         
 
 print(luhns('79927398713'))
-print(optimizedLuhns('79927398713'))
+print(optimizedLuhns('4987050013745611'))

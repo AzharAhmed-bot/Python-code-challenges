@@ -12,7 +12,7 @@ def gcd(a,b):
 def GNFS(num):
     while True:
         guess=random.randint(2,num-1)
-        if num % guess !=0:
+        if gcd(num,guess)==1:
             break
 
     print(guess)
@@ -39,4 +39,4 @@ def GNFS(num):
         
 
 
-print(GNFS(103))
+print(GNFS(227))
