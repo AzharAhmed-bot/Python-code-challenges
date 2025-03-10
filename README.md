@@ -352,5 +352,9 @@ Examples
 [-3, 15, 8, -1, 7, -1] --> [-3, -1, -1, 7, 8, 15, 8, 7, -1, -1, -3]
 [-5, 10, 8, 10, 2, -3, 10] --> [-5, -3, 2, 8, 10, 10, 10, 10, 10, 8, 2, -3, -5]
 ```
+
+## 18 Biggest Square In a circle
+Description:
+Determine the area of the largest square that can fit inside a circle with radius r.
 ## License
 This repository is licensed under the MIT License.
