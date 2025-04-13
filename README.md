@@ -428,5 +428,16 @@ cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, mil
 # must return 0
 cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000})
 ```
+
+# 20. Data Mining
+Your task is to build a model1 which can predict y-coordinate.
+You can pass tests if predicted y-coordinates are inside error margin.
+
+
+You will receive train set which should be used to build a model.
+After you build a model tests will call function predict and pass x to it.
+
+
+Error is going to be calculated with RMSE.
 ## License
 This repository is licensed under the MIT License.
