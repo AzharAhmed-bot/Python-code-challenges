@@ -456,8 +456,18 @@ Examples
 1294      -->  "No palindromes found"
 "1221"    -->  "Not valid"
 ```
+# 22. Linear Regression of Y on X
+The function that you have to write accepts two list/array, x
+y, representing the coordinates of the points to regress (so that, for example, the first point has coordinates(x[0],y[0]))
 
 
+Your function should return a tuple (in Python) or an array (any other language) of two elements: a (intercept) and b (slope) in this order.
+
+```bash
+regressionLine([25,30,35,40,45,50], [78,70,65,58,48,42]) == (114.381, -1.4457)
+
+regressionLine([56,42,72,36,63,47,55,49,38,42,68,60], [147,125,160,118,149,128,150,145,115,140,152,155]) == (80.7777, 1.138)
+```
 
 ## License
 This repository is licensed under the MIT License.
