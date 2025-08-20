@@ -155,3 +155,165 @@ def commonElemets(arr1, arr2, arr3):
     return list(sorted(set(arr1) & set(arr2) & set(arr3))) if len(set(arr1) & set(arr2) & set(arr3)) > 0 else [-1]
 
 print(commonElemets([11, 13, 14, 45, 62, 72, 79, 90], [13, 24, 27, 31, 62, 74, 89, 89, 96], [12, 48, 58, 60, 62, 65, 88]))
+
+
+
+# Find triplets with zero sum
+def findTriplets(arr):
+    sorted_arr = sorted(arr)
+    n = len(arr)
+    result = []
+
+    for i in range(n-2):
+        
+        if i > 0 and sorted_arr[i] == sorted_arr[i-1]:
+            continue
+
+        left = i+1
+        right = n - 1
+
+        while left < right:
+            print(sorted_arr[i])
+            s = sorted_arr[i] +sorted_arr[left] + sorted_arr[right]
+            
+
+            if s == 0:
+                result.append([sorted_arr[i], sorted_arr[left], sorted_arr[right]])
+                print(result)
+                return True
+            elif s < 0:
+                left += 1
+            else:
+                right -= 1
+
+    return False
+
+    
+    
+
+
+print(findTriplets([0, -1, 2, -3, 1]))
+
+
+def findPages(arr,k):
+    result = []
+    n = len(arr)
+
+    def backtracking(current_split,start_index, num_splits_left):
+        if num_splits_left == 0:
+            if start_index == n:
+                result.append(list(current_split))
+            return
+        
+        for i in range(start_index, n - num_splits_left + 1):
+            subarray = arr[start_index:i+1]
+            current_split.append(subarray)
+            backtracking(current_split,i+1, num_splits_left-1)
+            current_split.pop()
+    
+    backtracking([],0,k)
+
+    min_pages =float('inf')
+
+    for split in result:
+        student_pages =[ sum(subarray) for subarray in split ]
+        max_pages = max(student_pages)
+        if max_pages < min_pages:
+            min_pages = max_pages
+    
+    return min_pages
+            
+
+print(findPages([12, 34, 67,90], 2)) 
+
+
+def optimisedfindPages(arr,k):
+
+    n = len(arr)
+
+    if k > n:
+        return -1
+
+    low = max(arr)
+    high = sum(arr)
+    ans = high
+
+    def is_possible(max_pages):
+        """
+        A helper function to check if it's possible to
+        allocate books with a given max_pages limit.
+        """
+        students_needed = 1
+        current_pages = 0
+           
+        for pages in arr:
+            if current_pages + pages <= max_pages:
+                current_pages += pages
+            else:
+                students_needed += 1
+                current_pages = pages
+            
+        return students_needed <= k
+
+
+    while low <= high:
+        mid = low + (high - low) // 2
+
+        if is_possible(mid):
+            ans = mid
+            high = mid - 1
+        else:
+            low = mid + 1
+    
+    return ans
+
+print(optimisedfindPages([12, 34, 67,90], 2))
+
+
+
+def findKRotation(arr):
+    # Use binary search to find index of smallest item and its value is k
+    n = len(arr)
+    leftmost = 0
+    rightmost = n-1
+
+    while leftmost < rightmost:
+        mid = (leftmost + rightmost) // 2
+        prev_idx = (mid -1) % n
+        next_idx = (mid + 1) % n
+
+        if arr[mid] <= arr[next_idx] and arr[mid] <= arr[prev_idx]:
+            return mid
+        elif arr[mid] <= arr[rightmost]:
+            rightmost = mid - 1
+        else:
+            leftmost = mid + 1
+
+            
+        
+
+
+print(findKRotation([6,9,2,4]))
+
+
+
+
+def groupAnagrams(words):
+    result = {}
+    for word in words:
+        sorted_word = "".join(sorted(word)) 
+        if sorted_word in result:
+            result[sorted_word].append(word)
+        else:
+            result[sorted_word] = [word]
+
+    return list(result.values())
+
+        
+
+
+
+
+
+
+print(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
